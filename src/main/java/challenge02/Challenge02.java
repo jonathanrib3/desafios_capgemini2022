@@ -18,9 +18,8 @@ public class Challenge02 {
 
     /*
         Verifica se possui a quantidade mínima necessária para a senha e,
-        se não tiver, retorna a quantidade de caracteres necessários. Se
-        ele ainda possuir mas não passar pela regex, ainda continua
-        inválida.
+        se não tiver, retorna a quantidade necessária. Se ele ainda possuir 
+        a quantidade mas não passar pela regex, ainda continua inválida.
     */
     public String verifyPassword(String password) {
         int length = password.length();

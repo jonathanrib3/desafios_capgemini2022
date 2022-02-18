@@ -12,9 +12,8 @@ public class Challenge03 {
 
     /*
         Método que conta todos os pares anagramáticos. Primeiro chama a função
-        que define o array de possíveis substrings e depois itera por ele
-        comparando cada substring pra verificar se é um anagrama ou não. Se for,
-        o contador incrementar, senão, ele continua no mesmo estado.
+        que define o array de possíveis substrings e depois realiza a comparação
+        de cada substring por meio de dois loops.
     */
     public int countAllAnagrammaticPairs(String str) {
         getAllPossibleSubstrings(str);
@@ -34,15 +33,11 @@ public class Challenge03 {
         Método que extrai todas as substrings possíveis de uma string por dois
         loops. O primeiro é pra pegar o índice de um caractere, e o segundo
         pra pegar o índice do caractere subsequente. No segundo loop é cortado
-        a substring com esses índices respectivamente, sendo i o anterior e o j
-        o posterior.
+        a substring com esses índices respectivamente.
         Então por exemplo na primeira iteração de uma string "abc",
         no primeiro loop o i vai valer 0, daí o j vai valer 1. Na primeira
         iteração do segundo for, a primeira substring armazenada no valor de
-        substrings será "ab", depois vai ser "abc". Quando chegar na segunda
-        iteração do primeiro for, o índice será o 1 que equivale ao caractere
-        "b", e assim no segundo for as iterações vão resultar em "bc" e assim
-        sucessivamente.
+        substrings será "ab", depois vai ser "abc" e assim sucessivamente.
     */
     public void getAllPossibleSubstrings(String str) {
         for(int i = 0; i < str.length(); i++) {
@@ -57,7 +52,7 @@ public class Challenge03 {
         se dá por checar se ambas as substrings possuem o mesmo tamanho e,
         se tiverem, converter ambas as substrings para um array de char
         ordenado em ordem alfabética e verificar se os arrays são iguais.
-        Se forem, significa que são anagramas, senão não são.
+        Se forem, significa que são anagramas.
      */
     public boolean isAnagram(String substr1, String substr2) {
         if(substr1.length() != substr2.length()) {
