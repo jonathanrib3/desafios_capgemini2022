@@ -27,7 +27,7 @@ Abaixo segue uma breve documentação dos principais métodos utilizados (os com
 
 ```int countAllAnagrammaticPairs(String str)```
 
-- Esse método "cola" toda a lógica do problema. Aqui é usado um contador de pares anagramáticos que acresce toda a vez que é encontrado um par. Esses pares são encontrados verificando todas as substrings possíveis e vendo se elas são anagramas ou não por meio de dois loops.
+- Esse método "cola" toda a lógica do problema. Aqui é usado um contador de pares anagramáticos que acresce em 1 toda a vez que é encontrado um par. Esses pares são encontrados verificando todas as substrings possíveis e vendo se elas são anagramas ou não por meio de dois loops.
 
 ```void getAllPossibleSubstrings(String str)```
 
